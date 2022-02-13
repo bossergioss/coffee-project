@@ -160,12 +160,12 @@ body {
 .st-wrapper {
     height: 95vh;
     margin: var(--align-margin);
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     font-family: var(--ffamily-montseratt);
+    position: relative;
 }
 
 .st-wrapper::before {
@@ -186,6 +186,20 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
+    position: relative;
+}
+
+.nav-btn {
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--accent-color);
+    top:45%;
+    right: -30px;
+    z-index: 3;
+    box-shadow: 5px 5px 5px #8888884a;
 }
 
 .st-card {
