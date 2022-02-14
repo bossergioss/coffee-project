@@ -22,64 +22,83 @@ body {
 
 .header{
    max-width: var(--main-width); 
-   height: 80vh;
+   height: 100vh;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   
 }
 
 .banner-wrapper {
-    width: 80vw;
     display: flex;
-    flex-direction: row;
-    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    padding-left: 5%;
+    padding-top: 5%;
+    color: #415167;
 }
 
-.brand {
+.logo{
     width: 40%;
 }
+
 .main-header{
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
+    z-index: 2;
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;   
+}
+.main-header-paragraph{
+    background-color: #C7A17A;
+    color: white;
     z-index: 3;
-    
 }
 
 .video-wrapper {
-    width: 70%;
-    height: 100%;
     overflow: hidden;
     position: relative;
+    flex: 2;
 }
 
 
 .promo {
     position: absolute;
-    top: -20%;
-    left: 0;
-    right: 0
+    top: -10%;
+    bottom: -10%;
 }
 
 .navigation {
-    width: 20vw;
     background-color: var(--primary-color); 
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+    flex: 0.75;
 }
 
 .navigation-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 40%;
+    
+    color: white;
+    list-style: none;
+}
+
+.navigation-link{
+    margin-bottom: 5%;
+    padding: 0.5rem 2rem;
+}
+.navigation-link:hover{
+    background-color: #0f2e6d62;
+}
+.navigation-link > a{
+    text-decoration: none;
     color: white;
 }
+
+/* Main section */
+
 
 .main-info-wrapper {
     height: 600px;
@@ -342,7 +361,7 @@ body {
     background-color: white;
     border: none;
     font-size: 30px;
-    font-family: var(--ffamily-montseratt);
+    font-family: var(--family-montseratt);
     color: var(--primary-color);
     font-weight: 900;
     border-bottom: 2px solid rgba(175, 172, 172, 0.377);
