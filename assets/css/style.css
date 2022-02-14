@@ -63,13 +63,32 @@ body {
     flex: 2;
 }
 
-
 .promo {
     position: absolute;
     top: -10%;
     bottom: -10%;
+    right: 0;
 }
 
+.button-play{
+    height: 15%;
+    width: 15%;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    z-index: 2;
+}
+
+.button-play > img {
+    height: 100%;
+    width: 100%;
+}
 .navigation {
     background-color: var(--primary-color); 
     display: flex;
