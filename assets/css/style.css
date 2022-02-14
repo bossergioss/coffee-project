@@ -153,8 +153,8 @@ body {
     color: var(--dark-gray-color);
     line-height: 1.5em;
     height: 80%;
-    /*background-color: darkorchid;*/
-    
+    padding-top: 5%;
+    padding-right: 10%;
 }
 
 .st-wrapper {
@@ -196,7 +196,7 @@ body {
     border: none;
     background-color: var(--accent-color);
     top:45%;
-    right: -30px;
+    right: -10%;
     z-index: 3;
     box-shadow: 5px 5px 5px #8888884a;
 }
@@ -228,7 +228,7 @@ body {
 
 }
 
-.st-descrip, .gift-descrip{
+.st-descrip, .gift-descrip, .per-descrip{
     width: 100%;
     min-height: 60%;
 }
@@ -243,11 +243,6 @@ body {
     font-size: 24px;
     font-weight: bolder;
     margin-top: 10px;
-}
-
-.prod-descrip {
-    padding-top: 5%;
-    padding-right: 10%;
 }
 
 .basket {
@@ -352,4 +347,64 @@ body {
 .slide-btn button:last-child{
     border-bottom: none;
 }
+
+.per-wrapper {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--ffamily-montseratt);
+    position: relative;
+}
+
+.per-wrapper::after {
+    width: 25%;
+    height: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+} 
+
+.per-sorts {
+    width: 60%;
+    height: 65%;
+    margin: 0 auto;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    position: relative;
+}
+
+.per-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px #8888884a;
+}
+
+.per-im-wrapper {
+    background-color: var(--light-gray-color);
+    min-height: 55%;
+}
+
+.per-im-package  {
+    max-width: 100%;
+    max-height: 100%;
+} 
+
+.per-descrip-wrapper{
+    min-height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10%;
+}
+
+
 
