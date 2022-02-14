@@ -406,5 +406,12 @@ body {
     padding-left: 10%;
 }
 
+.footer {
+    height: 5vh;
+    background-color: var(--light-gray-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
 
 
