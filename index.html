@@ -5,61 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap" rel="stylesheet">
     <title>Revo Coffee</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <section class="banner-wrapper">
-           <div class="brand">
-               <img src="./assets/img/revo_logo.svg" alt="Logo" class="logo">
-           </div>
-           <h1 class="main-header">
-            Your Personalized Coffee
-            </h1>
-            <div class="video-wrapper">
-                <video loop muted class="promo" src="assets/video/video-MQ.mp4"></video>
-                <button>
-                    <img src="./assets/img/play-circle.svg" alt="play-button">
-                </button>
-            </div>
-           
+            <!-- <div class="brand-container"> -->
+                <a href="#">
+                    <img src="./assets/img/revo_logo.svg" alt="Logo" class="logo">
+                </a>
+                   
+              
+                <h1 class="main-header">
+                    Your <p class="main-header-paragraph">Personalized</p> Coffee
+                </h1>
+            <!-- </div> -->
         </section>
-        <nav>
-            <ul class="navigation">
-                <li><a>HOME PAGE</a></li>
-                <li><a>COFFEE</a></li>
-                <li><a>PHIN MẠ MÀU</a></li>
-                <li><a>COMBO PHIN PHÊ</a></li>
-                <li><a>GIFTSET</a></li>
-                <li><a>СONTACT</a></li>
+        <div class="video-wrapper">
+            <video loop muted class="promo" src="assets/video/video-MQ.mp4"></video>
+            <button class="button-play">
+                <img src="./assets/img/play-circle.svg" alt="play-button">
+            </button>
+        </div>
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li class="navigation-link"><a href="#">HOME PAGE</a></li>
+                <li class="navigation-link"><a href="#">COFFEE</a></li>
+                <li class="navigation-link"><a href="#">PHIN MẠ MÀU</a></li>
+                <li class="navigation-link"><a href="#">COMBO PHIN PHÊ</a></li>
+                <li class="navigation-link"><a href="#">GIFTSET</a></li>
+                <li class="navigation-link"><a href="#">СONTACT</a></li>
+
             </ul>
         </nav>
     </header>
-    <section class="main-info-wrapper">
+        <section class="main-info-wrapper">
         <div class="info">
         <h4 class="tagline">Your Personalized Coffee</h4>
         <h1 class="main-title">COFFEE BUILD YOUR BASE</h1>
         </div>
         <div class="pr-wrapper">
-            <div class="pr-card-wrapper">
-                <img src="./assets/img/main1.png" alt="" class="prod-img">
-                <h2>Origin</h2>
-                <article class="prod-descrip">Arabica and Robusta coffee beans meet international standards.</article>
+            <div class="pr-card">
+                <img src="./assets/img/main-1.svg" alt="" class="prod-img">
+                    <article class="descrip-wrapper">
+                        <h2 class="h-name">Origin</h2>
+                        <p class="prod-descrip">Arabica and Robusta coffee beans meet international standards.</p>
+                    </article>
             </div>
-            <div class="pr-card-wrapper">
-                <img src="./assets/img/main2.png" alt="" class="prod-img">
-                <h2 class="h-name">Quality</h2>
-                <article class="prod-descrip">Each coffee bean is a highly concentrated process of coffee artisans.</article>
+            <div class="pr-card">
+                <img src="./assets/img/main-2.svg" alt="" class="prod-img">
+                    <article class="descrip-wrapper">
+                        <h2 class="h-name">Quality</h2>
+                        <p class="prod-descrip">Each coffee bean is a highly concentrated process of coffee artisans.</p>
+                    </article>
             </div>
-            <div class="pr-card-wrapper">
-                <img src="./assets/img/main3.png" alt="" class="prod-img">
-                <h2 class="h-name">Coffee Beans</h2>
-                <article class="prod-descrip">70% of the quality of a cup of coffee comes from the origin and quality of the green bean.</article>
+            <div class="pr-card">
+                <img src="./assets/img/main-3.svg" alt="" class="prod-img">
+                    <article class="descrip-wrapper">
+                        <h2 class="h-name">Coffee Beans</h2>
+                        <p class="prod-descrip">70% of the quality of a cup of coffee comes from the origin and quality of the green bean.</p>
+                    </article>
             </div>
-            <div class="pr-card-wrapper">
-                <img src="./assets/img/main4.png" alt="" class="prod-img">
-                <h2 class="h-name">Preparation</h2>
-                <article class="prod-descrip">The coffee beans are molted through a thorough and rigorous roasting process.</article>
+            <div class="pr-card">
+                <img src="./assets/img/main-4.svg" alt="" class="prod-img">
+                    <article class="descrip-wrapper">
+                        <h2 class="h-name">Preparation</h2>
+                        <p class="prod-descrip">The coffee beans are molted through a thorough and rigorous roasting process.</p>
+                    </article>
             </div>
         </div>
     </section>
@@ -68,56 +83,148 @@
         <h4 class="tagline">Choose Your Favorite</h4>
         <h1 class="main-title">STANDARD</h1>
         </div>
+        
         <section class="st-sorts">
-
-            <div class="st-card-wrapper">
+            <button class="nav-btn"><img src="./assets/img/nav.svg"></button>
+            <div class="st-card">
                 <div class="st-im-wrapper">
                 <img class="st-im-package" src="./assets/img/stand1.png" alt="">
                 </div>
-                <div>
-                    <h2>99.000</h2>
-                    <h3>REVO Morning</h3>
+                <div class="st-descrip-wrapper">
+                    <div class="st-descrip">
+                    <h2 class="price">99.000</h2>
+                    <h3 class="name">REVO Morning</h3>
                     <article class="prod-descrip">bitter, post-sweet, floral scent</article>
-                    <div><button>BUY NOW</button><a href=""></a></div>
+                    </div>
+                    <div class="basket"><button class="btn">BUY NOW</button><a href="" class="details-link">Details</a></div>
                 </div>
             </div>
 
 
-            <div class="st-card-wrapper">
+            <div class="st-card">
                 <div class="st-im-wrapper">
                 <img class="st-im-package" src="./assets/img/stand2.png" alt="">
                 </div>
-                <div>
-                    <h2>85.000</h2>
-                    <h3>REVO Everyday</h3>
+                <div class="st-descrip-wrapper">
+                    <div class="st-descrip">
+                    <h2 class="price">85.000</h2>
+                    <h3 class="name">REVO Everyday</h3>
                     <article class="prod-descrip">balanced, post-bitter, chocolate-flavored</article>
-                    <div><button>BUY NOW</button><a href=""></a></div>
+                    </div>
+                    <div class="basket"><button class="btn">BUY NOW</button><a href="" class="details-link">Details</a></div>
                 </div>
             </div>
 
-            <div class="st-card-wrapper">
+            <div class="st-card">
                 <div class="st-im-wrapper">
                 <img class="st-im-package" src="./assets/img/stand3.png" alt="">
                 </div>
-                <div>
-                    <h2>139.000</h2>
-                    <h3>REVO Origin</h3>
+                <div class="st-descrip-wrapper">
+                    <div class="st-descrip">
+                    <h2 class="price">139.000</h2>
+                    <h3 class="name">REVO Origin</h3>
                     <article class="prod-descrip">sweet, less bitter, strawberry sour</article>
-                    <div><button>BUY NOW</button><a href=""></a></div>
+                    </div>
+                    <div class="basket"><button class="btn">BUY NOW</button><a href="" class="details-link">Details</a></div>
                 </div>
             </div>
-            <div class="st-card-wrapper">
+            
+            <div class="st-card">
                 <div class="st-im-wrapper">
                 <img class="st-im-package" src="./assets/img/stand4.png" alt="">
                 </div>
-                <div>
-                    <h2>75.000</h2>
-                    <h3>REVO Đậm Đà</h3>
+                <div class="st-descrip-wrapper">
+                    <div class="st-descrip">
+                    <h2 class="price">75.000</h2>
+                    <h3 class="name">REVO Đậm Đà</h3>
                     <article class="prod-descrip">bold, bitter, traditional</article>
-                    <div><button>BUY NOW</button><a href=""></a></div>
+                    </div>
+                    <div class="basket"><button class="btn">BUY NOW</button><a href="" class="details-link">Details</a></div>
                 </div>
             </div>
+        </section>
     </section>
+
+    <section class="gift-wrapper">
+        <div class="info">
+        <h4 class="tagline">Best Gift For Best Friend</h4>
+        <h1 class="main-title">GIFTSET</h1>
+        </div> 
+        <div class="gift-card-wrapper">
+            <div class="slide-btn">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+            </div>
+            <div class="gift-im-wrapper">
+                <img class="gift-im-package" src="./assets/img/gift-1.svg" alt="">
+            </div>
+                <div class="gift-descrip-wrapper">
+                    <div class="gift-descrip">
+                    <h2 class="price">285.000</h2>
+                    <h3 class="name">Giftset "Vietnamese coffee"</h3>
+                    <article class="prod-descrip">Great gift for coffee connoisseurs. Coffee beans are carefully selected by Revo, roasted according to technology and the secret of learning from famous artisans, along with the love, passion of coffeemakers... Create pure cups of coffee just for you.</article>
+                    </div>
+                    <div class="basket"><button class="btn">BUY NOW</button><a href="" class="details-link">Details</a></div>
+                </div>    
+        </div>
+    </section>
+    <section class="per-wrapper">
+        <div class="info">
+        <h4 class="tagline">Your Personalized Coffee</h4>
+        <h1 class="main-title">COFFEE COMBO</h1>
+        </div>
+        
+        <section class="per-sorts">
+            <button class="nav-btn"><img src="./assets/img/nav.svg"></button>
+            <div class="per-card">
+                <div class="per-im-wrapper">
+                    <img class="per-im-package" src="./assets/img/combo-1.svg" alt="">
+                </div>
+                <div class="per-descrip-wrapper">
+                    <div class="per-descrip">
+                    <h2 class="price">147.000</h2>
+                    <h3 class="name">Bold Revo Combo</h3>
+                    <article class="prod-descrip">The caffeine content in Revo Bold is strong enough to keep you awake to work...</article>
+                    </div>
+                    <div class="basket"><button class="btn">BUY NOW</button><a href="" class="details-link">Details</a></div>
+                </div>
+            </div>
+        
+            <div class="per-card">
+                <div class="per-im-wrapper">
+                    <img class="per-im-package" src="./assets/img/combo-2.svg" alt="">
+                </div>
+                <div class="per-descrip-wrapper">
+                    <div class="per-descrip">
+                    <h2 class="price">156.000</h2>
+                    <h3 class="name">Combo Revo Everyday</h3>
+                    <article class="prod-descrip">Revo Everyday is a blend of the bitter taste of Robusta beans and the aroma of... </article>
+                    </div>
+                    <div class="basket"><button class="btn">BUY NOW</button><a href="" class="details-link">Details</a></div>
+                </div>
+            </div>
+        
+            <div class="per-card">
+                <div class="per-im-wrapper">
+                    <img class="per-im-package" src="./assets/img/combo-3.svg" alt="">
+                </div>
+                <div class="per-descrip-wrapper">
+                    <div class="per-descrip">
+                    <h2 class="price">275.000</h2>
+                    <h3 class="name">Combo Revo Honey</h3>
+                    <article class="prod-descrip">Honey - in the name Revo Honey comes from the method of processing Arabica beans...</article>
+                    </div>
+                    <div class="basket"><button class="btn">BUY NOW</button><a href="" class="details-link">Details</a></div>
+                </div>
+            </div>    
+                  
+        </section>
+    </section>
+    <footer class="footer">
+        <p class="rights">© Revo Coffee Việt Nam - 2022</p>
+    </footer>
+    
 </body>
 </html>
 
